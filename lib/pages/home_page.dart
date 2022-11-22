@@ -9,10 +9,8 @@ class HomePage extends StatelessWidget {
     String name = 'Aayush';
     return Scaffold(
       appBar: AppBar(
-        title: Text('DAY 2'),
-        backgroundColor: Colors.deepPurple,
+        title: Text('Catalog App'),
       ),
-      backgroundColor: Color(0xFFDFF6FF),
       body: Center(
         child: Container(
             child: Text('Welcome to $days days of Flutter by $name!')),
