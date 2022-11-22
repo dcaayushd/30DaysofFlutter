@@ -14,6 +14,7 @@ class _myAppState extends State<myApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My 1st App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
@@ -31,8 +32,9 @@ class _myAppScreenState extends State<myAppScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('1st App')),
-      body: Center(child: Container(child: Text('Welcome to my 1st App!')),),
+      body: Center(
+        child: Container(child: Text('Welcome to my 1st App!')),
+      ),
     );
   }
 }
