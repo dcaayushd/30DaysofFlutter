@@ -15,7 +15,9 @@ class HomeDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
@@ -30,8 +32,8 @@ class HomeDetailsPage extends StatelessWidget {
                         backgroundColor:
                             MaterialStateProperty.all(MyTheme.darkBluishColor),
                         shape: MaterialStateProperty.all(StadiumBorder())),
-                    child: "Buy".text.xl2.make())
-                .wh(100, 50)
+                    child: "Add to cart".text.xl2.make())
+                .wh(150, 50)
           ],
         ).p32(),
       ),
@@ -59,6 +61,11 @@ class HomeDetailsPage extends StatelessWidget {
                         .make(),
                     catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                     10.heightBox,
+                    "Le priegano che ma facitore della niuno, essilio da furon con niuno. Di speranza potendo ignoranza cospetto che noi del quale e. Come la delle discenda intendo sí come tutte noi le, di propria di da iscacciato come noia, suoi manifestamente nella di che noi dovendo fragilita, come noi del."
+                        .text
+                        .textStyle(context.captionStyle)
+                        .make()
+                        .p16()
                   ],
                 ).py64(),
               ),
