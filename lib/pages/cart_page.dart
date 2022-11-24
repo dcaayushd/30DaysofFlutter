@@ -9,11 +9,14 @@ class CartPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
-        backgroundColor: MyTheme.creamColor,
-        title: "Cart".text.xl.bold.make(),
+        backgroundColor: context.canvasColor,
+        title: "Cart"
+            .text
+            .color(context.theme.colorScheme.secondary)
+            .xl
+            .bold
+            .make(),
       ),
-      body: Container(child: Text('')),
     );
   }
 }
