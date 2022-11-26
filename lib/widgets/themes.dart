@@ -9,7 +9,7 @@ class MyTheme {
         canvasColor: creamColor,
         // buttonColor: darkBluishColor, //deprecated
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
-          backgroundColor: Color(0xFF6366F1),
+          backgroundColor: Color(0xff212121),
           foregroundColor: Colors.white,
         ),
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple)
@@ -39,12 +39,12 @@ class MyTheme {
           color: Colors.black,
           elevation: 0.0,
           iconTheme: IconThemeData(color: Colors.white),
-          titleTextStyle: TextStyle(color: Colors.black, fontSize: 20),
+          titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
         ),
       );
 
   static Color creamColor = Color(0xfff5f5f5);
-  static Color darkCreamColor = Vx.gray900;
-  static Color lightBluishColor = Vx.indigo500;
+  static Color darkCreamColor = Color(0xFF111827);
+  static Color lightBluishColor = Color(0xFF6366F1);
   static Color darkBluishColor = Color(0xff403b58);
 }
