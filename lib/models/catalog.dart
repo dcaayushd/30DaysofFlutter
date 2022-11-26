@@ -1,8 +1,13 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class CatalogModel {
+  static final catModel = CatalogModel._internal();
+  CatalogModel._internal();
+  factory CatalogModel() => catModel;
+
   static List<Item> items = [];
+
+  set catalog(CatalogModel catalog) {}
 
   //Get item by Id
   Item getById(int id) =>
@@ -10,6 +15,8 @@ class CatalogModel {
 
   //Get item by Position
   Item getByPosition(int pos) => items[pos];
+
+  void add(Item catalog) {}
 }
 
 class Item {
@@ -93,4 +100,5 @@ class Item {
         color.hashCode ^
         image.hashCode;
   }
+  
 }
